@@ -2,81 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+/* for wireframe in dev */
+* {
+  border: 1px solid red;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-nav {
-  position: sticky;
-  top: 0;
-  background-color: #ffffff;
-  padding: 1rem;
-  z-index: 1000;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 1rem;
-}
-
-section {
+/* section {
   padding: 2rem;
   border-bottom: 1px solid #ccc;
-}
-
-section h2 {
-  margin-top: 0;
-}
+} */
 
 html {
   scroll-behavior: smooth;
 }
 
-/* 
-#header {
-  overflow: hidden;
-  background-color: #ffffff;
-  padding: .1rem 1rem;
-  position: fixed;
-  top: 0;
-  height: 50px;
-  width: 100%;
-  z-index: 1000;
-} */
-
-/* #header a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: .5rem;
-  text-decoration: none;
-  font-size: 1.25rem;
-  line-height: 2rem;
-  border-radius: 4px;
-}
-
-#header a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-#header a:active {
-  background-color: #362d65;
-  color: white;
-} */
-
-/* section {
-  padding: 60px 20px 5px 20px;
-} */
-
 .container {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  height: 100vh;
 }
 
 #home,
@@ -84,10 +32,9 @@ html {
 #projects,
 #skills,
 #contact {
-  height: 100vh;
   scroll-snap-align: start;
 }
-
+/* for horizontal scrolling */
 .scrolling-wrapper {
   display: flex;
   flex-wrap: nowrap;
@@ -107,15 +54,15 @@ html {
   border: 2px solid black;
   border-radius: 8px;
 }
+/* addressing section visibility with sticky navbar */
+/* .section-offset {
+  padding-top: 1rem;
+  margin-top: -1rem;
+} */
 
-.card a {
+/* .card a {
   text-decoration: none;
   color: black;
-}
-
-/* #home {
-  display: flex;
-  position: relative;
 } */
 
 .project-img {
@@ -123,18 +70,6 @@ html {
   height: auto;
   border: 2px solid black;
 }
-
-/* .card-home {
-  flex: 1;
-  background-color: #f2f3f4b0;
-  color: #181818;
-  padding: 20px;
-  border-radius: 5px;
-  font-size: xx-large;
-  padding-top: 30%;
-  margin-top: -10%;
-  margin-right: -10%;
-} */
 
 /* .image-links {
   flex: 1;
@@ -176,27 +111,6 @@ html {
   left: 10%;
   transform: translate(-50%, -50%);
   z-index: 1;
-} */
-
-/* #about-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  background-color: #f2f3f4b0;
-  color: #181818;
-  padding: 7%;
-  border-radius: 5px;
-  font-size: large;
-} */
-
-/* .center-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 90vh;
 } */
 
 .button-link {
