@@ -1,7 +1,20 @@
+import Card from "@/components/Card";
+
 const Projects = () => {
   return (
     <section id="projects" role="region" aria-labelledby="projects-heading">
-      <div className="center-card" id="projects-card">
+      <Card
+        background="linear-gradient(135deg, #f6d365 0%, #fda085 100%)"
+        color="#333"
+        width="90%"
+        maxWidth="600px"
+        padding="2rem"
+        margin="5rem auto"
+        border="none"
+        borderRadius="10px"
+        boxShadow="0 4px 12px rgba(0, 0, 0, 0.1)"
+      >
+      {/* <div className="center-card" id="projects-card"> */}
         <h2 id="projects-heading">Projects</h2>
         <hr />
         <div className="scrolling-wrapper">
@@ -78,7 +91,8 @@ const Projects = () => {
               location search filter</p>
           </div>
         </div>
-      </div>
+      {/* </div> */}
+      </Card>
     </section>
   );
 };

@@ -1,8 +1,21 @@
+"use client"
+
+import Card from "@/components/Card";
+
 const Skills = () => {
   return (
     <section id="skills" role="region" aria-label="Skills">
-      <div className="center-card">
-        <div id="skills-section">
+      <Card
+        background="linear-gradient(135deg, #f6d365 0%, #fda085 100%)"
+        color="#333"
+        width="90%"
+        maxWidth="600px"
+        padding="2rem"
+        margin="5rem auto"
+        border="none"
+        borderRadius="10px"
+        boxShadow="0 4px 12px rgba(0, 0, 0, 0.1)"
+      >
           <h4>Languages</h4>
           <span className="skill">JavaScript</span>
           <span className="skill">TypeScript</span>
@@ -37,8 +50,7 @@ const Skills = () => {
           <h4>Other Languages</h4>
           <span className="skill">Spanish</span>
           <span className="skill">Italian</span>
-        </div>
-      </div>
+      </Card>
   </section >
   );
 };

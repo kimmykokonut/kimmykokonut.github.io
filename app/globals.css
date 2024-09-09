@@ -7,16 +7,13 @@
   border: 1px solid red;
 }
 
-body {
+html, body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
-
-/* section {
-  padding: 2rem;
-  border-bottom: 1px solid #ccc;
-} */
 
 html {
   scroll-behavior: smooth;
@@ -54,11 +51,6 @@ html {
   border: 2px solid black;
   border-radius: 8px;
 }
-/* addressing section visibility with sticky navbar */
-/* .section-offset {
-  padding-top: 1rem;
-  margin-top: -1rem;
-} */
 
 /* .card a {
   text-decoration: none;
@@ -66,7 +58,7 @@ html {
 } */
 
 .project-img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   border: 2px solid black;
 }

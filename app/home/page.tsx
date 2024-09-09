@@ -7,21 +7,18 @@ const Hero = () => {
     <section id="home"
       role="region"
       aria-labelledby="hero-heading"
-      className="section-offset flex justify-center items-center min-h-screen"
-      style={{ backgroundImage: "url('/static/tree.jpg"}}>
-      <Card
-        background="linear-gradient(135deg, #f6d365 0%, #fda085 100%)"
-        color="#333"
-        width="90%"
-        maxWidth="600px"
-        padding="1rem"
-        margin="1rem auto"
-        border="none"
-        borderRadius="15px"
-        boxShadow="0 4px 12px rgba(0, 0, 0, 0.1)">
-      <h2>Kim Robinson</h2>
-      <p>something cool here</p>
-      </Card>
+    >
+      <div className="grid grid-cols-1 lg:grid-cols-12">
+        <div className="col-span-7 place-self-center">
+          <h1 className="text-white mb-4 text-4xl lg:text-6xl font-extrabold">Kim Robinson</h1>
+          <p className="text-[#ADB7BE] text-lg lg:text-xl">words and stuff and things....</p>
+        </div>
+        <div className="col-span-5">
+          <div className="">
+            <img className="rounded-full mx-auto p-3 h-[388px] w-[300px] md:h-[550px] md:w-[420px]" src="./static/hunt.jpg" alt="person standing in the forest" />
+          </div>
+        </div>
+      </div>
     </section>
   )
 }
