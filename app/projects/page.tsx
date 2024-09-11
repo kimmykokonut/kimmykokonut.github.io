@@ -87,7 +87,7 @@ const Projects = () => {
             <a href="https://sound-check.netlify.app/" className="button-link">Website</a>
             <a href="https://github.com/kimmykokonut/sound-check" className="button-link">Code</a>
             <br />
-            <p style={{ color: 'black' }}>Group Project: I wrote the API calls, designed the Who's Coming page and built the
+            <p style={{ color: 'black' }}>Group Project: I wrote the API calls, designed the Who&#39;s Coming page and built the
               location search filter</p>
           </div>
         </div>

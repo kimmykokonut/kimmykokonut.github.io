@@ -24,7 +24,7 @@ export default function About() {
         <h2 className="text-center font-bold text-2xl mb-4">Kim Robinson</h2>
         <p className="text-lg font-semibold mb-4">Initiative * Integrity * Interpersonal Skills</p>
         <p className="text-md leading-relaxed mb-4">
-          I am a recent graduate of Epicodus' full-stack bootcamp, where I earned a certificate in web and mobile development. I have hands-on experience with JavaScript, React, C#, ASP.NET, and Web APIs, having completed over 65 projects.
+          I am a recent graduate of Epicodus&#39; full-stack bootcamp, where I earned a certificate in web and mobile development. I have hands-on experience with JavaScript, React, C#, ASP.NET, and Web APIs, having completed over 65 projects.
         </p>
         <p className="text-md leading-relaxed mb-4">
           During my internship at Clarity Innovations, I contributed to an EdTech dashboard and reporting tool, adding features and resolving issues using React and JavaScript. I collaborated with a team, presented prototypes using Figma, and styled applications with Tailwind CSS.
@@ -33,7 +33,7 @@ export default function About() {
           My diverse background in science, education, and creative roles equips me with a unique approach to problem-solving and attention to detail. I am fluent in Spanish and conversationally proficient in Italian, and I enjoy playing the ukulele and flute.
         </p>
         <p className="text-md leading-relaxed">
-          When I'm not coding, you can find me exploring the outdoors: foraging for mushrooms, hiking to alpine lakes, or nordic skiing.
+          When I&#39;m not coding, you can find me exploring the outdoors: foraging for mushrooms, hiking to alpine lakes, or nordic skiing.
         </p>
           </Card>
         </section>

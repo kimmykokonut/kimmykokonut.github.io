@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <section id="contact" role="region" aria-labelledby="contact-heading">
       <div className="center-card" id="contact-form">
-        <h2 id="contact-heading">Let's connect!</h2>
+        <h2 id="contact-heading">Let&#39;s connect!</h2>
         <br />
         <h5><a href="https://github.com/kimmykokonut">GitHub</a></h5>
         <h5><a href="https://www.linkedin.com/in/robinson-kim/">LinkedIn</a></h5>
