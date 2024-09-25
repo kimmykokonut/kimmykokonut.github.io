@@ -21,7 +21,7 @@ export default function About() {
         borderRadius="10px"
         boxShadow="0 4px 12px rgba(0, 0, 0, 0.1)"
       >
-        <h2 className="text-center font-bold text-2xl mb-4">Kim Robinson</h2>
+        <h2 className="text-center font-bold text-2xl mb-4">About Kim</h2>
         <p className="text-lg font-semibold mb-4">Initiative * Integrity * Interpersonal Skills</p>
         <p className="text-md leading-relaxed mb-4">
           I am a recent graduate of Epicodus&#39; full-stack bootcamp, where I earned a certificate in web and mobile development. I have hands-on experience with JavaScript, React, C#, ASP.NET, and Web APIs, having completed over 65 projects.

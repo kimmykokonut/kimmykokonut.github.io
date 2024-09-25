@@ -7,7 +7,8 @@
   border: 1px solid red;
 }
 
-html, body {
+html,
+body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -31,6 +32,7 @@ html {
 #contact {
   scroll-snap-align: start;
 }
+
 /* for horizontal scrolling */
 .scrolling-wrapper {
   display: flex;
@@ -202,12 +204,26 @@ footer a {
   text-decoration: none;
 } */
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+:root {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --border-color: #2c2c2c;
 }
 
+.light-mode {
+  --bg-color: #eeeeee;
+  --text-color: #000000;
+  --border-color: #cccccc;
+}
+
+.dark-mode {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --border-color: #2c2c2c;
+}
+
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -215,4 +231,4 @@ footer a {
     --background-end-rgb: 0, 0, 0;
   }
 }
-  */
+  */ 
