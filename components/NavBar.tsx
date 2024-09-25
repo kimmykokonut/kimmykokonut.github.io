@@ -4,24 +4,26 @@ import Link from 'next/link';
 import NavLink from './NavLink';
 import { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/16/solid';
+import MenuOverlay from './MenuOverlay';
+import { NavLinkProps } from '@/app/interfaces';
 
 
-const navLinks = [
+const navLinks: NavLinkProps[] = [
   {
     title: "About",
-    path: "#about",
+    href: "#about",
   },
   {
     title: "Projects",
-    path: "#projects",
+    href: "#projects",
   },
   {
     title: "Skills",
-    path: "#skills",
+    href: "#skills",
   },
   {
     title: "Contact",
-    path: "#contact",
+    href: "#contact",
   },
 ];
 
@@ -29,7 +31,7 @@ const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
 
   return (
-    <nav className='bg-[#121212] bg-opacity-90 fixed top-0 left-0 right-0 z-10'>
+    <nav className='bg-[#121212] bg-opacity-100 fixed top-0 left-0 right-0 z-10'>
       <div className='flex flex-wrap items-center justify-between mx-auto px-4 py-2'>
         <Link href="/" className='text-2xl md:text-5xl text-white font-semibold'>LOGO</Link>
         <div className='mobile-menu block md:hidden'>
@@ -50,13 +52,14 @@ const Navbar = () => {
           {
             navLinks.map((link, index) => (
               <li key={index}>
-                <NavLink href={link.path} title={link.title} />
+                <NavLink href={link.href} title={link.title} />
               </li>
             ))
           }
         </ul>
         </div>
       </div>
+      {navOpen ? <MenuOverlay links={navLinks} /> : null}
     </nav>
   );
 };
