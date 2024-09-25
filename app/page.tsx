@@ -7,10 +7,12 @@ import Contact from "./contact/page";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-[#121212] mx-auto px-12 py-4">
-      <Hero />
-      <Projects />
-      <Skills />
-      <Contact />
+      <div className="container mt-24 mx-auto">
+        <Hero />
+        <Projects />
+        <Skills />
+        <Contact />
+      </div>
     </main>
   );
 }

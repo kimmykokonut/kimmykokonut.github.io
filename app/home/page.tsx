@@ -21,23 +21,23 @@ const Hero = () => {
           <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
             {isClient && (
               <TypeAnimation
-              sequence={[
-                'Full-stack Developer',
-                1000, // Waits 1s
-                'Forager', 
-                1000, 
-                'Software Engineer',
-                1000,
-                'Web Developer',
-                1000  
-              ]}
-              wrapper="span"
-              cursor={true}
-              repeat={Infinity}
-              style={{ fontSize: '2em', display: 'inline-block' }}
-            />
+                sequence={[
+                  'Full-stack Developer',
+                  1000, // Waits 1s
+                  'Forager',
+                  1000,
+                  'Software Engineer',
+                  1000,
+                  'Web Developer',
+                  1000
+                ]}
+                wrapper="span"
+                cursor={true}
+                repeat={Infinity}
+                style={{ fontSize: '2em', display: 'inline-block' }}
+              />
             )}
-            </p>
+          </p>
           <div>
             <button className="px-4 py-2 w-full sm:w-fit rounded-full mr-4 bg-white hover:bg-slate-200 bg-gradient-to-br from-blue-500 via-green-500 to-yellow-500 text-white">GitHub</button>
             <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-green-500 to-yellow-500 hover:bg-slate-800 "><span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-3 py-1 text-white">LinkedIn</span></button>
