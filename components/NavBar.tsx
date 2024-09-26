@@ -3,7 +3,8 @@
 import Link from 'next/link';
 import NavLink from './NavLink';
 import { useState } from 'react';
-import { Bars3Icon, XMarkIcon, MoonIcon, SunIcon } from '@heroicons/react/16/solid';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/16/solid';
+import { MoonIcon, SunIcon } from '@heroicons/react/24/outline';
 import MenuOverlay from './MenuOverlay';
 import { NavLinkProps } from '@/app/interfaces';
 
