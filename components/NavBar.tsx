@@ -7,7 +7,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/16/solid';
 import { MoonIcon, SunIcon } from '@heroicons/react/24/outline';
 import MenuOverlay from './MenuOverlay';
 import { NavLinkProps } from '@/app/interfaces';
-
+import { useTheme } from 'next-themes';
 
 const navLinks: NavLinkProps[] = [
   {
@@ -30,26 +30,26 @@ const navLinks: NavLinkProps[] = [
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
-  const [isLightMode, setIsLightMode] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   const toggleTheme = () => {
-    setIsLightMode(!isLightMode);
+    setTheme(theme === 'dark' ? 'light' : 'dark');
   };
 
   return (
-    <nav className='bg-[#1e1e1e] bg-opacity-100 fixed top-0 left-0 right-0 z-10'>
+    <nav className='bg-white dark:bg-[#1e1e1e] bg-opacity-100 fixed top-0 left-0 right-0 z-10'>
       <div className='flex flex-wrap items-center justify-between mx-auto px-4 py-2'>
-        <Link href="/" className='text-2xl md:text-5xl text-white font-semibold'>KR</Link>
+        <Link href="/" className='text-2xl md:text-5xl text-black dark:text-white font-semibold'>KR</Link>
         <div className='mobile-menu block md:hidden'>
           {!navOpen ? (
             <button
               onClick={() => setNavOpen(true)}
-              className='flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white'>
+              className='flex items-center px-3 py-2 border rounded border-gray-800 dark:border-slate-200 text-gray-800 dark:text-slate-200 hover:text-black dark:hover:text-white hover:border-black dark:hover:border-white'>
               <Bars3Icon className='h-5 w-5' /></button>
           ) : (
             <button
               onClick={() => setNavOpen(false)}
-              className='flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white'>
+              className='flex items-center px-3 py-2 border rounded border-gray-800 dark:border-slate-200 text-slate-200 dark:text-slate-200 hover:text-black dark:hover:text-white hover:border-black dark:hover:border-white'>
               <XMarkIcon className='h-5 w-5' /></button>)
           }
         </div>
@@ -66,8 +66,8 @@ const Navbar = () => {
         </div>
         <button
           onClick={toggleTheme}
-            className='flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white'>
-              {isLightMode ? <MoonIcon className='h-5 w-5' /> : <SunIcon className='h-5 w-5' /> }
+            className='flex items-center px-3 py-2 border rounded border: slate-800 text-black hover:text-yellow-500 hover:border-yellow-500 dark:border-slate-800 dark:text-white dark:hover:text-white dark:hover:border-white'>
+              {theme === 'dark' ? <SunIcon className='h-5 w-5' /> : <MoonIcon className='h-5 w-5' /> }
           </button>
       </div>
       {navOpen ? <MenuOverlay links={navLinks} /> : null}

@@ -1,15 +1,13 @@
-import type { Metadata } from "next";
+"use client";
+
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { metadata } from "./metadata";
 import Navbar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import { ThemeProvider } from "next-themes";
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Kim Robinson Portfolio",
-  description: "Software developer",
-};
 
 export default function RootLayout({
   children,
@@ -20,12 +18,20 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" />
+        <title>{metadata.title as string}</title>
+        <meta name="description" content={metadata.description as string} />
       </head>
-      <body>
-      <Navbar />
-      {children}
-      {/* <body className={inter.className}>{children}</body> */}
-      <Footer />
+      <body className={inter.className}>
+        <ThemeProvider
+        attribute="class"
+        // defaultTheme="system"
+        // enableSystem
+        // disableTransitionOnChange
+        >
+          <Navbar />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
