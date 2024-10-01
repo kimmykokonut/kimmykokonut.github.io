@@ -7,7 +7,7 @@ import { MoonIcon, SunIcon } from '@heroicons/react/24/outline';
 import MenuOverlay from './MenuOverlay';
 import { NavLinkProps } from '@/app/interfaces';
 import { useTheme } from 'next-themes';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 
 const navLinks: NavLinkProps[] = [
@@ -38,7 +38,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='bg-red-500 dark:bg-[#1e1e1e] bg-opacity-100 fixed top-0 left-0 right-0 z-10'>
+    <nav className='bg-[#f2f3f4] dark:bg-[#1e1e1e] bg-opacity-100 fixed top-0 left-0 right-0 z-10'>
       <div className='flex flex-wrap items-center justify-between mx-auto px-4 py-2'>
         <Link href="/" className='text-2xl md:text-5xl text-black dark:text-white font-semibold'>KR</Link>
         <div className='mobile-menu block md:hidden'>
@@ -50,7 +50,7 @@ const Navbar = () => {
           ) : (
             <button
               onClick={() => setNavOpen(false)}
-              className='flex items-center px-3 py-2 border rounded border-gray-800 dark:border-slate-200 text-slate-200 dark:text-slate-200 hover:text-black dark:hover:text-white hover:border-black dark:hover:border-white'>
+              className='flex items-center px-3 py-2 border rounded border-gray-800 dark:border-slate-200 text-slate-800 dark:text-slate-200 hover:text-black dark:hover:text-white hover:border-black dark:hover:border-white'>
               <XMarkIcon className='h-5 w-5' /></button>)
           }
         </div>
@@ -67,7 +67,7 @@ const Navbar = () => {
         </div>
         <button
           onClick={toggleTheme}
-            className='flex items-center px-3 py-2 border rounded border-slate-800 text-black hover:text-yellow-500 hover:border-yellow-500 dark:border-slate-800 dark:text-white dark:hover:text-white dark:hover:border-white'>
+            className='flex items-center px-3 py-2 border rounded border-slate-800 text-black hover:text-yellow-600 hover:border-yellow-600 dark:border-slate-500 dark:text-white dark:hover:text-white dark:hover:border-white'>
               {theme === 'dark' ? <SunIcon className='h-5 w-5' /> : <MoonIcon className='h-5 w-5' /> }
           </button>
       </div>

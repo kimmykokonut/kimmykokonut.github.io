@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 /* for wireframe in dev */
-* {
+/* * {
   border: 1px solid red;
-}
+} */
 
 html,
 body {
