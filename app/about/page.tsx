@@ -29,9 +29,9 @@ export default function About() {
           Outside of coding, you can find me hiking through the wilderness, foraging for mushrooms, or hitting the trails for some nordic skiing. I'm also fluent in Spanish and conversational in Italian, which comes in handy for building community and working with diverse teams. I'm excited to contribute my skills and enthusiasm to a mission-driven company where I can continue learning and growing alongside a collaborative team.
         </p>
         <div className="flex flex-row mt-8">
-          <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>{" "}Skills{" "}</TabButton>
+          <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>{" "}Languages/Frameworks{" "}</TabButton>
+          <TabButton selectTab={() => handleTabChange("databaseTest")} active={tab === "databaseTest"}>{" "}Database/Testing{" "}</TabButton>
           <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}>{" "}Education{" "}</TabButton>
-          <TabButton selectTab={() => handleTabChange("experience")} active={tab === "experience"}>{" "}Experience{" "}</TabButton>
         </div>
       </div>
     </section>
