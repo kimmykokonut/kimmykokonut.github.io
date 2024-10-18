@@ -1,9 +1,15 @@
-export const TAB_Data = [
+interface tabData {
+  title: string;
+  id: string;
+  content: JSX.Element;
+}
+
+export const TAB_DATA: tabData[] = [
   {
-    title: "Languages & Frameworks",
+    title: "Tech Stack",
     id: "skills",
     content: (
-      <ul>
+      <ul className="list-disc pl-2">
         <li>JavaScript</li>
         <li>TypeScript</li>
         <li>C#</li>
@@ -23,7 +29,7 @@ export const TAB_Data = [
     )
   },
   {
-    title: "Databases & Testing",
+    title: "DB & Test",
     id: "databaseTest",
     content: (
       <ul>
@@ -42,12 +48,17 @@ export const TAB_Data = [
     title: "Education",
     id: "education",
     content: (
-      <ul>
-        <li>Certificate: Web & Mobile Development</li>
-        <li>Epicodus full-stack bootcamp, Portland, OR</li>
-        <li>B.S. Natural Resources Management & Engineering</li>
-        <li>University of Connecticut, Storrs</li>
-      </ul>
+      <div>
+        <ul>
+          <li>Certificate: Web & Mobile Development</li>
+          <li>Epicodus full-stack bootcamp, Portland, OR</li>
+        </ul>
+        <br />
+        <ul>
+          <li>B.S. Natural Resources Management & Engineering</li>
+          <li>University of Connecticut, Storrs</li>
+        </ul>
+      </div>
     )
   }
 ]
