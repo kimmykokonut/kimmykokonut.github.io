@@ -1,41 +1,39 @@
 "use client";
 
-import Card from "@/components/Card";
+import { useState, useTransition } from "react";
+import TabButton from "@/components/TabButton";
 
 export default function About() {
+  const [tab, setTab] = useState("skills");
+  const [isPending, startTransition] = useTransition();
+
+  const handleTabChange = (id: string) => {
+    startTransition(() => {
+      setTab(id);
+    });
+  };
+
   return (
-    <section 
-    id="about" 
-    role="region" 
-    aria-labelledby="about-heading"
-      className="section-offset flex justify-center items-center min-h-screen"
+    <section
+      id="about"
+      role="region"
+      aria-labelledby="about-heading"
+      className="section-offset flex justify-center items-center min-h-screen dark:text-white"
     >
-      <Card
-        background="linear-gradient(135deg, #f6d365 0%, #fda085 100%)"
-        color="#333"
-        width="90%"
-        maxWidth="600px"
-        padding="2rem"
-        margin="5rem auto"
-        border="none"
-        borderRadius="10px"
-        boxShadow="0 4px 12px rgba(0, 0, 0, 0.1)"
-      >
-        <h2 className="text-center font-bold text-2xl mb-4">About Kim</h2>
-        <p className="text-lg font-semibold mb-4">Initiative * Integrity * Interpersonal Skills</p>
-        <p className="text-md leading-relaxed mb-4">
-          I am a recent graduate of Epicodus&#39; full-stack bootcamp, where I earned a certificate in web and mobile development. I have hands-on experience with JavaScript, React, C#, ASP.NET, and Web APIs, having completed over 65 projects.
+      <div className="border-slate-500 py-8 px-4 sm:py-16 xl:px-16">
+        <h2 className="text-4xl font-bold mb-4">About Kim</h2>
+        <p className="text-base lg:text-lg leading-relaxed mb-2">
+          I'm a recent graduate of Epicodus' full-stack bootcamp, where I got hands-on experience with JavaScript, React, C#, ASP.NET, and building Web APIs. During my internship at Clarity Innovations, I tackled feature development and bug fixes for an EdTech dashboard, using React, JavaScript, and GitLab to streamline the user experience. My background in science, education, and creative roles gives me a unique perspective when solving problems—whether it's refactoring code or brainstorming new features.
         </p>
-        <p className="text-md leading-relaxed mb-4">
-          During my internship at Clarity Innovations, I contributed to an EdTech dashboard and reporting tool, adding features and resolving issues using React and JavaScript. I collaborated with a team, presented prototypes using Figma, and styled applications with Tailwind CSS.
+        <p className="text-base lg:text-lg leading-relaxed mb-4">
+          Outside of coding, you can find me hiking through the wilderness, foraging for mushrooms, or hitting the trails for some nordic skiing. I'm also fluent in Spanish and conversational in Italian, which comes in handy for building community and working with diverse teams. I'm excited to contribute my skills and enthusiasm to a mission-driven company where I can continue learning and growing alongside a collaborative team.
         </p>
-        <p className="text-md leading-relaxed mb-4">
-          My diverse background in science, education, and creative roles equips me with a unique approach to problem-solving and attention to detail. I am fluent in Spanish and conversationally proficient in Italian, and I enjoy playing the ukulele and flute.
-        </p>
-        <p className="text-md leading-relaxed">
-          When I&#39;m not coding, you can find me exploring the outdoors: foraging for mushrooms, hiking to alpine lakes, or nordic skiing.
-        </p>
-          </Card>
-        </section>
-        );
+        <div className="flex flex-row mt-8">
+          <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>{" "}Skills{" "}</TabButton>
+          <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}>{" "}Education{" "}</TabButton>
+          <TabButton selectTab={() => handleTabChange("experience")} active={tab === "experience"}>{" "}Experience{" "}</TabButton>
+        </div>
+      </div>
+    </section>
+  );
 }

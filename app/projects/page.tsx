@@ -1,4 +1,16 @@
 import Card from "@/components/Card";
+import { ProjectProps } from "../interfaces";
+
+const projectList: ProjectProps[] = [
+  {
+    title: "Myco Matrix",
+    href: "https://myco.onrender.com/",
+    description: "Automated field trip registration and lottery",
+    tech: "React | Typescript | Python | Django | Material UI | PostgreSQL",
+    imageSrc: "./static/mycoList.png",
+  },
+  //Add projects here then map through in Projects component below to replace
+];
 
 const Projects = () => {
   return (
