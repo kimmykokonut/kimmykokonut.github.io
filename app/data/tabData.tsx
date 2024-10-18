@@ -32,7 +32,7 @@ export const TAB_DATA: tabData[] = [
     title: "DB & Test",
     id: "databaseTest",
     content: (
-      <ul>
+      <ul className="list-disc pl-2">
         <li>MySQL</li>
         <li>PostgreSQL</li>
         <li>SQLite</li>
@@ -49,15 +49,18 @@ export const TAB_DATA: tabData[] = [
     id: "education",
     content: (
       <div>
-        <ul>
-          <li>Certificate: Web & Mobile Development</li>
-          <li>Epicodus full-stack bootcamp, Portland, OR</li>
-        </ul>
-        <br />
-        <ul>
-          <li>B.S. Natural Resources Management & Engineering</li>
-          <li>University of Connecticut, Storrs</li>
-        </ul>
+        <dl className="max-w-md divide-y divide-gray-300 dark:divide-gray-700 pl-2">
+          <div className="flex flex-col pb-3">
+            <dt className="mb-1 font-semibold">Certificate: Web & Mobile Development</dt>
+            <dd>Epicodus Full-Stack Bootcamp</dd>
+            <dd>Portland, OR</dd>
+          </div>
+          <div className="flex flex-col pt-3">
+            <dt className="mb-1 font-semibold">B.S. Natural Resources Management & Engineering</dt>
+            <dd>Minor: Spanish</dd>
+            <dd>University of Connecticut, Storrs</dd>
+          </div>
+        </dl>
       </div>
     )
   }
