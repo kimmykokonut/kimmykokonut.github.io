@@ -10,7 +10,7 @@ import { PROJECT_DATA } from "@/app/data/projectData";
 
 const Carousel: React.FC = () => {
   return (
-    <div className="w-full relative">
+    <div className="w-full flex justify-center">
       <Swiper
         modules={[Pagination, Autoplay]}
         spaceBetween={20}
@@ -25,6 +25,16 @@ const Carousel: React.FC = () => {
           el: '.swiper-pagination',
           type: 'progressbar',
         }}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+        }}
         className="progress-slide-carousel"
       >
         {PROJECT_DATA.map((project, index) => (
@@ -33,7 +43,7 @@ const Carousel: React.FC = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="swiper-pagination !bottom-2 !top-auto !w-80 right-0 mx-auto bg-gray-100"></div>
+      <div className="swiper-pagination !bottom-2 !top-auto !w-80 right-0 mx-auto bg-purple-100"></div>
     </div>
   );
 };

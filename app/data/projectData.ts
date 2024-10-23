@@ -29,7 +29,7 @@ export const PROJECT_DATA: projectDataProps[] = [
     websiteLink: "https://myco.onrender.com/",
     description: "Automated field trip registration and lottery",
     tech: "React | Typescript | Python | Django | Material UI | PostgreSQL",
-    imageSrc: "/static/mycoList.png",
+    imageSrc: "/static/mycoHome.png",
     codeLink: "https://github.com/kimmykokonut/Capstone",
   },
   {
@@ -69,7 +69,7 @@ export const PROJECT_DATA: projectDataProps[] = [
     websiteLink: "https://kimmykokonut.github.io/inventory-tracker-cra-redux/",
     description: "An independent project for Epicodus to build a React project managing local and shared state with class components, then refactored to functional components and added Redux to manage state, including TDD Jest testing",
     tech: "React | JavaScript | Html | CSS | Bootstrap | Redux | Jest | npm",
-    imageSrc: "/static/inventory.png",
+    imageSrc: "/static/gelato.png",
     codeLink: "https://github.com/kimmykokonut/inventory-tracker-cra-redux",
   },
   {
