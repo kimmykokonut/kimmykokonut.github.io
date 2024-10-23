@@ -5,6 +5,8 @@
 ## issues
 - progress bar is missing for carousel-disappeared once restyled card.
 - want to add a pause button or arrows for carousel?
+- contact header is not lined up the same as about/projects
+- fix footer
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

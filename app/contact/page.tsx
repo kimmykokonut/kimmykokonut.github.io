@@ -6,7 +6,7 @@ const Contact = () => {
       aria-labelledby="contact-heading"
       className="text-[#121212] dark:text-white"
     >
-      <div className="border-slate-500 py-8 px-4 sm:py-16 xl:px-16 max-w-4xl mx-auto" id="contact-form">
+      <div className="border-slate-500 py-2 px-4 xl:px-16 max-w-4xl mx-auto" id="contact-form">
         <h2 className="text-4xl font-bold mb-4" id="contact-heading">Let&#39;s connect!</h2>
         <hr />
         <div className="flex justify-end mb-2">

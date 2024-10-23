@@ -20,10 +20,6 @@ const navLinks: NavLinkProps[] = [
     href: "#projects",
   },
   {
-    title: "Skills",
-    href: "#skills",
-  },
-  {
     title: "Contact",
     href: "#contact",
   },
@@ -67,9 +63,9 @@ const Navbar = () => {
         </div>
         <button
           onClick={toggleTheme}
-            className='flex items-center px-3 py-2 border rounded border-slate-800 text-black hover:text-yellow-600 hover:border-yellow-600 dark:border-slate-500 dark:text-white dark:hover:text-white dark:hover:border-white'>
-              {theme === 'dark' ? <SunIcon className='h-5 w-5' /> : <MoonIcon className='h-5 w-5' /> }
-          </button>
+          className='flex items-center px-3 py-2 border rounded border-slate-800 text-black hover:text-yellow-600 hover:border-yellow-600 dark:border-slate-500 dark:text-white dark:hover:text-white dark:hover:border-white'>
+          {theme === 'dark' ? <SunIcon className='h-5 w-5' /> : <MoonIcon className='h-5 w-5' />}
+        </button>
       </div>
       {navOpen ? <MenuOverlay links={navLinks} /> : null}
     </nav>
