@@ -1,12 +1,18 @@
 const Contact = () => {
   return (
-    <section id="contact" role="region" aria-labelledby="contact-heading">
-      <div className="center-card" id="contact-form">
-        <h2 id="contact-heading">Let&#39;s connect!</h2>
-        <br />
-        <h5><a href="https://github.com/kimmykokonut">GitHub</a></h5>
-        <h5><a href="https://www.linkedin.com/in/robinson-kim/">LinkedIn</a></h5>
-        <br />
+    <section
+      id="contact"
+      role="region"
+      aria-labelledby="contact-heading"
+      className="text-[#121212] dark:text-white"
+    >
+      <div className="border-slate-500 py-8 px-4 sm:py-16 xl:px-16 max-w-4xl mx-auto" id="contact-form">
+        <h2 className="text-4xl font-bold mb-4" id="contact-heading">Let&#39;s connect!</h2>
+        <div className="flex flex-row">
+          <h5 className="pr-5"><a href="https://github.com/kimmykokonut">GitHub</a></h5>
+          <h5><a href="https://www.linkedin.com/in/robinson-kim/">LinkedIn</a></h5>
+        </div>
+        <div className="text-center">
           <p>or you can fill out this form: </p>
           <form
             action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfVZSYVrelhSgGoVTNseTXAouYw8i0ZR0ZrdeauRuJC63BeoQ/formResponse"
@@ -37,6 +43,7 @@ const Contact = () => {
             <br />
             <input type="submit" value="Send Message" className="button-link" />
           </form>
+        </div>
       </div>
     </section>
   );

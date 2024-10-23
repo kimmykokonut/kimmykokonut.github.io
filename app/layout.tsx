@@ -23,8 +23,8 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <ThemeProvider
-        attribute="class"
-        defaultTheme="light"
+          attribute="class"
+          defaultTheme="light"
         // enableSystem
         // disableTransitionOnChange
         >

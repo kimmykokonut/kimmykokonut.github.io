@@ -57,7 +57,7 @@ export const TAB_DATA: tabData[] = [
           </div>
           <div className="flex flex-col pt-3">
             <dt className="mb-1 font-semibold">B.S. Natural Resources Management & Engineering</dt>
-            <dd>Minor: Spanish</dd>
+            <dd>Minor: Spanish   3.7 GPA</dd>
             <dd>University of Connecticut, Storrs</dd>
           </div>
         </dl>

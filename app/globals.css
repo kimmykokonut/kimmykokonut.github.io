@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* for wireframe in dev */
-/* * {
-  border: 1px solid red;
-} */
-
 html,
 body {
   font-family: Arial, sans-serif;
@@ -34,77 +29,24 @@ html {
 }
 
 /* for horizontal scrolling */
-.scrolling-wrapper {
+/* .scrolling-wrapper {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   margin: 30px;
-}
+} */
 
-.scrolling-wrapper .card {
+/* .scrolling-wrapper .card {
   flex: 0 0 auto;
   max-width: 90%;
   /* height: auto; */
-  margin-right: 30px;
+/* margin-right: 30px;
   padding: 10px 5px 10px 5px;
   text-align: center;
   background-color: rgba(128, 128, 128, 0.747);
   border: 2px solid black;
   border-radius: 8px;
-}
-
-/* .card a {
-  text-decoration: none;
-  color: black;
-} */
-
-.project-img {
-  max-width: 50%;
-  height: auto;
-  border: 2px solid black;
-}
-
-/* .image-links {
-  flex: 1;
-} */
-
-/* .mushroom-anchor {
-  color: whitesmoke;
-  text-decoration: none;
-  text-align: center;
-}
-
-#amanita-about {
-  position: absolute;
-  top: 65%;
-  left: 37%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-
-#bolete-projects {
-  position: absolute;
-  top: 75%;
-  left: 25%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-
-#coprinus-skills {
-  position: absolute;
-  top: 80%;
-  left: 45%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-
-#trumpet-contact {
-  position: absolute;
-  top: 70%;
-  left: 10%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
 } */
 
 .button-link {
@@ -152,24 +94,6 @@ html {
   transform: translateY(2px);
 }
 
-/* #skills-section {
-  padding: 2%;
-  border: 1px solid black;
-  background-color: #f2f3f4b0;
-  text-align: center;
-  color: black;
-  font-size: large;
-} */
-
-/* .skill {
-  display: inline-block;
-  margin: 5px;
-  padding: 10px;
-  background-color: #829c84;
-  color: #333;
-  border-radius: 20px;
-} */
-
 /* #contact-form {
   padding: 2%;
   border: 1px dashed black;
@@ -203,32 +127,3 @@ html {
 footer a {
   text-decoration: none;
 } */
-
-
-:root {
-  --bg-color: #121212;
-  --text-color: #ffffff;
-  --border-color: #2c2c2c;
-}
-
-.light-mode {
-  --bg-color: #eeeeee;
-  --text-color: #000000;
-  --border-color: #cccccc;
-}
-
-.dark-mode {
-  --bg-color: #121212;
-  --text-color: #ffffff;
-  --border-color: #2c2c2c;
-}
-
-/* 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-  */ 
