@@ -14,7 +14,6 @@ const Carousel: React.FC = () => {
       <Swiper
         modules={[Pagination, Autoplay]}
         spaceBetween={20}
-        // maybe 2 slides on lg screen? 1 on sm?
         slidesPerView={1}
         loop={true}
         autoplay={{
@@ -27,6 +26,10 @@ const Carousel: React.FC = () => {
         }}
         breakpoints={{
           640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
             slidesPerView: 1,
             spaceBetween: 20,
           },
@@ -43,7 +46,7 @@ const Carousel: React.FC = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="swiper-pagination !bottom-2 !top-auto !w-80 right-0 mx-auto bg-purple-100"></div>
+      <div className="swiper-pagination !bottom-2 !top-auto !w-80 right-0 mx-auto bg-red-100"></div>
     </div>
   );
 };

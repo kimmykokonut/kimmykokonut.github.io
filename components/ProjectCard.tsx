@@ -4,9 +4,9 @@ import Image from "next/image";
 const ProjectCard: React.FC<projectDataProps> = ({ title, websiteLink, description, tech, imageSrc, codeLink }) => {
 
   return (
-    <div className="relative flex flex-col my-3 bg-white dark:bg-gray-700 shadow border border-slate-200 dark:border-none rounded-lg w-96">
+    <div className="relative flex flex-col my-3 bg-white dark:bg-gray-700 shadow border border-slate-200 dark:border-none rounded-lg w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
       <a href={websiteLink} className="block h-full">
-        <div className="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
+        <div className="relative h-56 xs:h-32 m-2 xs:mb-0 overflow-hidden text-white rounded-md">
           <Image
             src={imageSrc}
             alt={`${title} project image`}
