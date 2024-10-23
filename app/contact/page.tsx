@@ -1,5 +1,3 @@
-import ButtonLink from "@/components/ButtonLink";
-
 const Contact = () => {
   return (
     <section
