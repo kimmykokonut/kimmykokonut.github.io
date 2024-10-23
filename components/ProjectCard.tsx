@@ -22,8 +22,8 @@ const ProjectCard: React.FC<projectDataProps> = ({ title, websiteLink, descripti
         </div>
       </a>
       <div className="flex justify-evenly items-center px-4 pb-3">
-        {websiteLink && <a href={websiteLink} className="button-link">Website</a>}
-        {codeLink && <a href={codeLink} className="button-link">Source Code</a>}
+        {websiteLink && <a className="button-link" href={websiteLink}>Website</a>}
+        {codeLink && <a className="button-link" href={codeLink}>Source Code</a>}
       </div>
     </div>
   );

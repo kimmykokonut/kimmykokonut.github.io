@@ -42,12 +42,12 @@ const Hero = () => {
           <div>
             <a
               href='https://github.com/kimmykokonut'
-              className="px-4 py-2 w-full sm:w-fit rounded-full mr-4 bg-white hover:bg-slate-200 bg-gradient-to-br from-blue-500 via-green-500 to-yellow-500 text-white inline-block text-center">GitHub
+              className="button-link">GitHub
             </a>
             <a
               href='https://www.linkedin.com/in/robinson-kim/'
               className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-green-500 to-yellow-500 hover:bg-slate-800 inline-block text-center">
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-3 py-1 text-white">LinkedIn</span>
+              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-3 py-1 text-white hover:text-blue-500">LinkedIn</span>
             </a>
           </div>
         </div>
