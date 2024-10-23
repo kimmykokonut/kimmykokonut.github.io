@@ -2,6 +2,10 @@
 
 ## WIP
 
+## issues
+- progress bar is missing for carousel-disappeared once restyled card.
+- want to add a pause button or arrows for carousel?
+
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

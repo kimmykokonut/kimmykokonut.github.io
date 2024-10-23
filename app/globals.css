@@ -36,24 +36,6 @@ html {
   @apply text-black;
 }
 
-/* #contact-form {
-  padding: 2%;
-  border: 1px dashed black;
-  background-color: #f2f3f4b0;
-  text-align: center;
-  color: black;
-  font-size: x-large;
-  min-height: auto;
-} */
-
-/* #contact-form a {
-  text-decoration: none;
-}
-
-#contact-form a:active {
-  color: green;
-} */
-
 /* footer {
   text-align: center;
   overflow: hidden;
