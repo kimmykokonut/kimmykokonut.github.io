@@ -13,13 +13,13 @@ const Carousel: React.FC = () => {
     <div className="w-full relative">
       <Swiper
         modules={[Pagination, Autoplay]}
-        spaceBetween={30}
+        spaceBetween={20}
         // maybe 2 slides on lg screen? 1 on sm?
         slidesPerView={1}
         loop={true}
         autoplay={{
-          delay: 1200,
-          disableOnInteraction: false,
+          delay: 2400,
+          disableOnInteraction: true,
         }}
         pagination={{
           el: '.swiper-pagination',
