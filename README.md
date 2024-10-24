@@ -1,5 +1,6 @@
-<center>
+<img width="500" alt="Home Page, mobile dark mode" src="https://github.com/user-attachments/assets/74c73f6d-6237-4539-b2e0-e13bab52008c">
 
+<center>
   <h1>My Portfolio</h1>
   <h3>by <a href="https://github.com/kimmykokonut">Kim Robinson</a></h3>
   <p>
@@ -20,9 +21,11 @@
   
   <!-- <a href="https://www.linkedin.com/feed/update/urn:li:activity:7203485384104693762/" alt="linked in reference">Learn more here via LinkedIn</a>  -->
 
-  <p>Initiated September 6, 2024</p>
-  
-  </center>
+  <p>Initiated September 6, 2024</p>  
+</center>
+
+<img width="500" alt="Home Page, Light Mode" src="https://github.com/user-attachments/assets/d2294d64-9fab-41e6-bf5b-0b7cba0289f5">
+<img width="500" alt="Projects Carousel, Dark Mode" src="https://github.com/user-attachments/assets/27d157b0-3f3d-4cfa-9023-ea6358702e77">
 
 <!-- <div style="display: flex; justify-content: space-around;">
   <div style="width: 40%;">
