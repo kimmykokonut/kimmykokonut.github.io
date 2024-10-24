@@ -3,10 +3,9 @@
 ## WIP
 
 ## issues
-- progress bar is missing for carousel-disappeared once restyled card.
-- want to add a pause button or arrows for carousel?
+- want arrows/pause button closer to each other and to hug the bottom of each project card, right now there is a gap if it's a short description.
 - contact header is not lined up the same as about/projects
-- fix footer
+- looks great in safari & chrome. getting runtime error in firefox. 
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
