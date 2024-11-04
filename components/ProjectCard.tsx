@@ -29,7 +29,7 @@ const ProjectCard: React.FC<projectDataProps> = ({
         <h4 className="mb-1 text-slate-800 dark:text-white text-lg sm:text-md font-semibold">
           {title}
         </h4>
-        <div className="overflow-y-auto flex-grow">
+        <div className="overflow-y-auto flex flex-grow">
           <p className="text-slate-600 dark:text-white text-xs leading-normal">
             {description}
           </p>
