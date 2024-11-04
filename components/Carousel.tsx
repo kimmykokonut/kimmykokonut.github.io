@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-// import { PlayIcon, PauseIcon } from "@heroicons/react/24/outline";
+import "swiper/css/pagination";
 
 import ProjectCard from "./ProjectCard";
 import { PROJECT_DATA } from "@/app/data/projectData";
@@ -47,10 +47,9 @@ const Carousel: React.FC = () => {
           <div className="swiper-button-prev"></div>
           <div className="swiper-button-next"></div>
         </Swiper>
-        {/* <div className="swiper-pagination mt-4"></div> */}
-        {/* <div className="relative flex justify-center items-center mt-1 space-x-1 md:space-x-2"> */}
-
-        {/* </div> */}
+      </div>
+      <div className="relative mt-5">
+        <div className="swiper-pagination"></div>
       </div>
     </div>
   );
