@@ -35,3 +35,11 @@ html {
 .button-link:hover {
   @apply text-black;
 }
+
+.dark .swiper-pagination-bullet {
+  @apply bg-gray-100;
+}
+
+.dark .swiper-pagination-bullet-active {
+  @apply bg-white !important;
+}
