@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useState } from 'react';
-import { TypeAnimation } from 'react-type-animation';
-import Image from 'next/image';
+import { useEffect, useState } from "react";
+import { TypeAnimation } from "react-type-animation";
+import Image from "next/image";
 
 const Hero = () => {
   const [isClient, setIsClient] = useState(false);
@@ -23,31 +23,33 @@ const Hero = () => {
             {isClient && (
               <TypeAnimation
                 sequence={[
-                  'Full-stack Developer',
+                  "Full-stack Developer",
                   1000, // Waits 1s
-                  'Forager',
+                  "Forager",
                   1000,
-                  'Software Engineer',
+                  "Software Engineer",
                   1000,
-                  'Web Developer',
-                  1000
+                  "Web Developer",
+                  1000,
                 ]}
                 wrapper="span"
                 cursor={true}
                 repeat={Infinity}
-                style={{ fontSize: '2em', display: 'inline-block' }}
+                style={{ fontSize: "2em", display: "inline-block" }}
               />
             )}
           </p>
           <div>
-            <a
-              href='https://github.com/kimmykokonut'
-              className="button-link">GitHub
+            <a href="https://github.com/kimmykokonut" className="button-link">
+              GitHub
             </a>
             <a
-              href='https://www.linkedin.com/in/robinson-kim/'
-              className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-green-500 to-yellow-500 hover:bg-slate-800 inline-block text-center">
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-3 py-1 text-white hover:text-blue-500">LinkedIn</span>
+              href="https://www.linkedin.com/in/robinson-kim/"
+              className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-green-500 to-yellow-500 hover:bg-slate-800 inline-block text-center"
+            >
+              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-3 py-1 text-white hover:text-blue-500">
+                LinkedIn
+              </span>
             </a>
           </div>
         </div>
@@ -62,6 +64,6 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 export default Hero;
