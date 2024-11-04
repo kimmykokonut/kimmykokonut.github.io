@@ -35,19 +35,3 @@ html {
 .button-link:hover {
   @apply text-black;
 }
-
-/* footer {
-  text-align: center;
-  overflow: hidden;
-  background-color: black;
-  padding: .25rem;
-  position: fixed;
-  bottom: 0;
-  height: 25px;
-  width: 100%;
-  z-index: 1000;
-}
-
-footer a {
-  text-decoration: none;
-} */
