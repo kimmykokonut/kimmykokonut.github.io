@@ -29,7 +29,7 @@ html {
 }
 
 .button-link {
-  @apply px-4 py-2 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-green-500 to-yellow-500 text-white inline-block text-center cursor-pointer;
+  @apply px-4 py-2 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-green-600 to-yellow-500 text-white inline-block text-center cursor-pointer;
 }
 
 .button-link:hover {

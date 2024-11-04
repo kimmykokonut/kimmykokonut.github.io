@@ -16,17 +16,19 @@ export const TAB_DATA: tabData[] = [
         <li>Python</li>
         <li>Node.js</li>
         <li>React</li>
+        <li>Next.js</li>
+        <li>Vue.js</li>
         <li>ASP.NET</li>
         <li>Django</li>
         <li>Flask</li>
         <li>HTML</li>
         <li>CSS</li>
-        <li>Tailwind CSS</li>
+        <li>Tailwind</li>
         <li>Material UI</li>
         <li>Bootstrap</li>
         <li>Webpack</li>
       </ul>
-    )
+    ),
   },
   {
     title: "DB & Test",
@@ -42,7 +44,7 @@ export const TAB_DATA: tabData[] = [
         <li>MSTest</li>
         <li>Cypress</li>
       </ul>
-    )
+    ),
   },
   {
     title: "Education",
@@ -51,17 +53,23 @@ export const TAB_DATA: tabData[] = [
       <div>
         <dl className="max-w-md divide-y divide-gray-300 dark:divide-gray-700 pl-2">
           <div className="flex flex-col pb-3">
-            <dt className="mb-1 font-semibold">Certificate: Web & Mobile Development</dt>
+            <dt className="mb-1 font-semibold">
+              Certificate: Web & Mobile Development
+            </dt>
             <dd>Epicodus Full-Stack Bootcamp</dd>
             <dd>Portland, OR</dd>
           </div>
           <div className="flex flex-col pt-3">
-            <dt className="mb-1 font-semibold">B.S. Natural Resources Management & Engineering</dt>
-            <dd>Minor: Spanish   3.7 GPA</dd>
-            <dd>University of Connecticut, Storrs</dd>
+            <dt className="mb-1 font-semibold">
+              B.S. Natural Resources Management & Engineering
+            </dt>
+            <dd>Minor: Spanish</dd>
+            <dd>GPA: 3.7/4.0</dd>
+            <dd>University of Connecticut</dd>
+            <dd>Storrs, CT</dd>
           </div>
         </dl>
       </div>
-    )
-  }
-]
+    ),
+  },
+];

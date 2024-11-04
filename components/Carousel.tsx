@@ -29,11 +29,15 @@ const Carousel: React.FC = () => {
           }}
           breakpoints={{
             640: {
-              slidesPerView: 1.5,
+              slidesPerView: 1.2,
               spaceBetween: 20,
             },
+            768: {
+              slidesPerView: 1.5,
+              spaceBetween: 25,
+            },
             1024: {
-              slidesPerView: 3,
+              slidesPerView: 2.5,
               spaceBetween: 30,
             },
           }}

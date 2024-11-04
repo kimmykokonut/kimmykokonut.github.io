@@ -11,21 +11,22 @@ const ProjectCard: React.FC<projectDataProps> = ({
 }) => {
   return (
     <div
-      className="relative flex flex-col my-1 bg-white dark:bg-gray-700 shadow border border-slate-200 dark:border-none rounded-md w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg min-w-[320px]"
+      className="relative flex flex-col my-1 bg-white dark:bg-gray-700 shadow border border-slate-200 dark:border-none rounded-md w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg min-w-[250px] sm:min-w-[360px]"
       style={{ height: "60vh" }}
     >
-      <div className="relative h-1/3 overflow-hidden text-white rounded-t-md">
-        <a href={websiteLink}>
+      <div className="relative h-1/3 md:h-1/2 overflow-hidden text-white rounded-t-md">
+        <a href={websiteLink} className="block h-full w-full relative">
           <Image
             src={imageSrc}
             alt={`${title} project image`}
-            layout="fill"
-            objectFit="cover"
+            fill
+            style={{ objectFit: "cover" }}
+            sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
           />
         </a>
       </div>
 
-      <div className="px-2 py-1 flex-grow flex flex-col justify-between h-2/3">
+      <div className="px-2 py-1 flex-grow flex flex-col justify-between h-2/3 md:h-1/2">
         <h4 className="mb-1 text-slate-800 dark:text-white text-lg sm:text-md font-semibold">
           {title}
         </h4>
