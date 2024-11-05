@@ -18,8 +18,6 @@ html {
 .container {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  padding: 0;
-  margin: 0;
 }
 
 #home,

@@ -67,7 +67,7 @@ This latest portfolio uses new technologies and frameworks, including Next.js an
 ### Known Bugs
 
 - Some spacing issues when changing browser window for projects section when I try to display 2 full projects. Fine as-is but could be improved
-- Snapping in xs screen, projects and let's connect are cut off by the nav bar.
+- Snapping in xs screen, projects and let's connect header lines are cut off by the nav bar. Visible in other screen sizes
 
 ## Getting Started
 
