@@ -22,7 +22,7 @@ export default function About() {
       aria-labelledby="about-heading"
       className="text-[#121212] dark:text-white"
     >
-      <div className="border-slate-500 py-8 px-4 sm:py-16 xl:px-16 max-w-4xl mx-auto">
+      <div className="border-slate-500 py-8 px-4 sm:py-16 lg:px-6 max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold mb-4">About Kim</h2>
         <p className="text-sm sm:text-base lg:text-lg leading-relaxed mb-2">
           I am a full-stack developer with hands-on experience in JavaScript,

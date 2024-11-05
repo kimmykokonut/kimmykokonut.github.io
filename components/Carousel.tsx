@@ -37,8 +37,12 @@ const Carousel: React.FC = () => {
               spaceBetween: 25,
             },
             1024: {
-              slidesPerView: 2.5,
+              slidesPerView: 2,
               spaceBetween: 30,
+            },
+            1280: {
+              slidesPerView: 2.4,
+              spaceBetween: 35,
             },
           }}
           className="progress-slide-carousel"
@@ -52,7 +56,7 @@ const Carousel: React.FC = () => {
           <div className="swiper-button-next"></div>
         </Swiper>
       </div>
-      <div className="relative mt-5">
+      <div className="relative mt-6">
         <div className="swiper-pagination"></div>
       </div>
     </div>

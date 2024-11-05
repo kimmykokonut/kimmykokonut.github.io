@@ -11,7 +11,7 @@ const ProjectCard: React.FC<projectDataProps> = ({
 }) => {
   return (
     <div
-      className="relative flex flex-col my-1 bg-white dark:bg-gray-700 shadow border border-slate-200 dark:border-none rounded-md w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg min-w-[250px] sm:min-w-[360px]"
+      className="relative flex flex-col my-1 bg-white dark:bg-gray-700 shadow border border-slate-200 dark:border-none rounded-md w-full max-w-xs sm:max-w-sm md:max-w-[467px] min-w-[250px] sm:min-w-[360px]"
       style={{ height: "60vh" }}
     >
       <div className="relative h-1/3 md:h-1/2 overflow-hidden text-white rounded-t-md">

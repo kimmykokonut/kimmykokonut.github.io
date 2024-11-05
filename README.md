@@ -66,8 +66,8 @@ This latest portfolio uses new technologies and frameworks, including Next.js an
 
 ### Known Bugs
 
-- Some spacing issues when changing browser window for projects section.
-- Snapping to the 'contact' section, it not does vertically line up as the other sections, this is due to less content. On larger screens some of the project section overflows. Assuming most people are viewing on laptop/phone, so not a priority.
+- Some spacing issues when changing browser window for projects section when I try to display 2 full projects. Fine as-is but could be improved
+- Snapping in xs screen, projects and let's connect are cut off by the nav bar.
 
 ## Getting Started
 
