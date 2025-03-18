@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  //uncomment these 2 before pushing and new build
-  basePath: "/kimmykokonut.github.io",
-  output: "export", //enables static exports
+  // npm run dev vs. npm run build (production)
+  basePath:
+    process.env.NODE_ENV === "production" ? "/kimmykokonut.github.io" : "",
+  output: process.env.NODE_ENV === "production" ? "export" : undefined, //enables static exports
   reactStrictMode: true,
 };
 
