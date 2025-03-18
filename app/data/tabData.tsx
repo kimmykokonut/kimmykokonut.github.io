@@ -10,20 +10,21 @@ export const TAB_DATA: tabData[] = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>JavaScript</li>
         <li>TypeScript</li>
-        <li>C#</li>
+        <li>JavaScript</li>
         <li>Python</li>
+        <li>C#</li>
         <li>Node.js</li>
         <li>React</li>
-        <li>Next.js</li>
         <li>Vue.js</li>
-        <li>ASP.NET</li>
+        <li>Next.js</li>
         <li>Django</li>
         <li>Flask</li>
+        <li>ASP.NET</li>
         <li>HTML</li>
         <li>CSS</li>
         <li>Tailwind</li>
+        <li>Quasar</li>
         <li>Material UI</li>
         <li>Bootstrap</li>
         <li>Webpack</li>
@@ -35,11 +36,12 @@ export const TAB_DATA: tabData[] = [
     id: "databaseTest",
     content: (
       <ul className="list-disc pl-2">
-        <li>MySQL</li>
         <li>PostgreSQL</li>
+        <li>MySQL</li>
         <li>SQLite</li>
         <li>Firestore (NoSql)</li>
         <li>Jest</li>
+        <li>Django Test Suite</li>
         <li>Unittest</li>
         <li>MSTest</li>
         <li>Cypress</li>

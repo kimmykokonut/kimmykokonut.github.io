@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useTransition } from "react";
 import TabButton from "@/components/TabButton";
+import { useState, useTransition } from "react";
 import { TAB_DATA } from "../data/tabData";
 
 export default function About() {
@@ -25,15 +25,13 @@ export default function About() {
       <div className="border-slate-500 py-8 px-4 sm:py-16 lg:px-6 max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold mb-4">About Kim</h2>
         <p className="text-sm sm:text-base lg:text-lg leading-relaxed mb-2">
-          I am a full-stack developer with hands-on experience in JavaScript,
-          React, Python, C#, and building Web APIs. During my internship at
-          Clarity Innovations, I tackled feature development and bug fixes for
-          an EdTech project dashboard to streamline the user experience. My
-          diverse background in science, education, and creative roles gives me
-          a unique problem-solving perspective. I am passionate about community
-          building and have volunteered in various educational and environmental
-          initiatives. I am eager to contribute to a mission-driven company and
-          grow alongside a collaborative team.
+          Hey there! I am a full-stack developer with a unique blend of
+          experience in science, education, and creative roles. Currently, I am
+          building a web prototype for a local company using Vue.js and
+          TypeScript. Passionate about community building, I have volunteered in
+          various educational and environmental initiatives. I am excited to
+          contribute my diverse skill set to a mission-driven company and grow
+          alongside a collaborative team.
         </p>
         <div className="flex flex-row mt-8">
           <TabButton
