@@ -1,13 +1,15 @@
-"use client";
-
+import Footer from "@/components/Footer";
+import Navbar from "@/components/NavBar";
+import { ThemeProvider } from "next-themes";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { metadata } from "./metadata";
-import Navbar from "@/components/NavBar";
-import Footer from "@/components/Footer";
-import { ThemeProvider } from "next-themes";
 
 const inter = Inter({ subsets: ["latin"] });
+
+export const metadata = {
+  title: "Kim Robinson Portfolio",
+  description: "Software developer",
+};
 
 export default function RootLayout({
   children,
@@ -18,16 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <title>{metadata.title as string}</title>
-        <meta name="description" content={metadata.description as string} />
       </head>
       <body className={inter.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-        // enableSystem
-        // disableTransitionOnChange
-        >
+        <ThemeProvider attribute="class" defaultTheme="light">
           <Navbar />
           {children}
           <Footer />
