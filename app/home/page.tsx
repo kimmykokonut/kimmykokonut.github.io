@@ -1,8 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
-import Image from "next/image";
 
 const Hero = () => {
   const [isClient, setIsClient] = useState(false);
@@ -58,8 +58,10 @@ const Hero = () => {
             className="object-cover border-solid border-slate-800 rounded-full mx-auto p-3 h-[388px] w-[300px] md:h-[550px] md:w-[420px]"
             src="/static/hunt.jpg"
             alt="person standing in the forest"
-            width={300}
-            height={500}
+            width={420}
+            height={550}
+            priority
+            quality={100}
           />
         </div>
       </div>
