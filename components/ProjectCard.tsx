@@ -20,7 +20,7 @@ const ProjectCard: React.FC<projectDataProps> = ({
             src={imageSrc}
             alt={`${title} project image`}
             fill
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: "cover", objectPosition: "top" }}
             sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
           />
         </a>

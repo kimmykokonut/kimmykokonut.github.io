@@ -34,27 +34,15 @@ export default function About() {
           alongside a collaborative team.
         </p>
         <div className="flex flex-row mt-8">
-          <TabButton
-            selectTab={() => handleTabChange("skills")}
-            active={tab === "skills"}
-          >
-            {" "}
-            Tech Stack{" "}
-          </TabButton>
-          <TabButton
-            selectTab={() => handleTabChange("databaseTest")}
-            active={tab === "databaseTest"}
-          >
-            {" "}
-            DB & Test{" "}
-          </TabButton>
-          <TabButton
-            selectTab={() => handleTabChange("education")}
-            active={tab === "education"}
-          >
-            {" "}
-            Education{" "}
-          </TabButton>
+          {TAB_DATA.map((tabItem) => (
+            <TabButton
+              key={tabItem.id}
+              selectTab={() => handleTabChange(tabItem.id)}
+              active={tab === tabItem.id}
+            >
+              {tabItem.title}
+            </TabButton>
+          ))}
         </div>
         <div className="mt-4">
           {selectedTab ? selectedTab.content : <p>Content not found</p>}

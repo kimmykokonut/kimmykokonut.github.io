@@ -38,7 +38,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#f2f3f4] dark:bg-[#1e1e1e] bg-opacity-100 fixed top-0 left-0 right-0 z-10">
+    <nav className="bg-[#f2f3f4] dark:bg-[#003366] bg-opacity-100 fixed top-0 left-0 right-0 z-10">
       <div className="flex flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href="/"

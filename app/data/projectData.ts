@@ -9,6 +9,15 @@ export interface projectDataProps {
 
 export const PROJECT_DATA: projectDataProps[] = [
   {
+    title: "Portland Families for Safe Streets Website",
+    websiteLink: "https://pdxfamiliesforsafestreets.org/",
+    description:
+      "As part of Portland Digital Corps and CODE PDX, I contributed as a software developer to the all-volunteer creation of a new website for a local non-profit. Our team transformed their online presence from a simple Facebook group into a custom, headless CMS-powered site deployed on Netlify. The new platform allows organizers to easily manage content and better support their mission of traffic safety advocacy. The project’s codebase is open source, enabling other local chapters to adapt it for their own communities.",
+    tech: "Next.js | Typescript | Tailwind CSS | Decap CMS",
+    imageSrc: "/static/fss.png",
+    codeLink: "https://github.com/BurlapRobot/pdx-fss",
+  },
+  {
     title: "Job Journey",
     websiteLink: "https://job-journey-neon.vercel.app/",
     description:

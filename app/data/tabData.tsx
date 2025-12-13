@@ -6,7 +6,7 @@ interface tabData {
 
 export const TAB_DATA: tabData[] = [
   {
-    title: "Tech Stack",
+    title: "Languages & Frameworks",
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
@@ -14,37 +14,39 @@ export const TAB_DATA: tabData[] = [
         <li>JavaScript</li>
         <li>Python</li>
         <li>C#</li>
-        <li>Node.js</li>
+        <li>HTML</li>
+        <li className="mb-5">CSS</li>
         <li>React</li>
+        <li>React Native</li>
         <li>Vue.js</li>
         <li>Next.js</li>
         <li>Django</li>
         <li>Flask</li>
+        <li>Node.js</li>
         <li>ASP.NET</li>
-        <li>HTML</li>
-        <li>CSS</li>
         <li>Tailwind</li>
-        <li>Quasar</li>
-        <li>Material UI</li>
-        <li>Bootstrap</li>
-        <li>Webpack</li>
       </ul>
     ),
   },
   {
-    title: "DB & Test",
+    title: "Tools & Libraries",
     id: "databaseTest",
     content: (
       <ul className="list-disc pl-2">
         <li>PostgreSQL</li>
         <li>MySQL</li>
         <li>SQLite</li>
-        <li>Firestore (NoSql)</li>
+        <li className="mb-5">Firestore (NoSql)</li>
+        <li>Styled Components</li>
+        <li>Quasar</li>
+        <li>Material UI</li>
+        <li className="mb-5">Bootstrap</li>
         <li>Jest</li>
         <li>Django Test Suite</li>
         <li>Unittest</li>
         <li>MSTest</li>
-        <li>Cypress</li>
+        <li className="mb-5">Cypress</li>
+        <li>Webpack</li>
       </ul>
     ),
   },
