@@ -27,11 +27,11 @@ export default function About() {
         <p className="text-sm sm:text-base lg:text-lg leading-relaxed mb-2">
           Hey there! I am a full-stack developer with a unique blend of
           experience in science, education, and creative roles. Currently, I am
-          building a web prototype for a local company using Vue.js and
-          TypeScript. Passionate about community building, I have volunteered in
-          various educational and environmental initiatives. I am excited to
-          contribute my diverse skill set to a mission-driven company and grow
-          alongside a collaborative team.
+          hunting down cross-platform UI bugs and improving accessibility on a
+          React Native mobile app. Passionate about community building, I have
+          volunteered in various educational and environmental initiatives. I am
+          excited to contribute my diverse skill set to a mission-driven company
+          and grow alongside a collaborative team.
         </p>
         <div className="flex flex-row mt-8">
           {TAB_DATA.map((tabItem) => (
