@@ -41,6 +41,7 @@ const Contact = () => {
                     name="entry.1437336806"
                     type="text"
                     placeholder="Ada Lovelace"
+                    required
                     className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                     aria-label="Name"
                   />
@@ -60,6 +61,8 @@ const Contact = () => {
                     type="email"
                     placeholder="ada@lovelace.com"
                     required
+                    maxLength={254}
+                    autoComplete="email"
                     className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   />
                 </label>
@@ -77,6 +80,7 @@ const Contact = () => {
                   <input
                     id="entry.1106511008"
                     name="entry.1106511008"
+                    required
                     type="text"
                     placeholder="Let's collaborate"
                     className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -96,6 +100,9 @@ const Contact = () => {
                   <textarea
                     id="entry.1356598461"
                     name="entry.1356598461"
+                    required
+                    minLength={20}
+                    maxLength={5000}
                     rows={4}
                     placeholder="Where do I begin..."
                     className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
