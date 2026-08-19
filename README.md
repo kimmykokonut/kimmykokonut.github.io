@@ -15,13 +15,11 @@
         <a href="https://www.linkedin.com/in/robinson-kim/">
             <img src="https://img.shields.io/badge/-LinkedIn-black.svg?style=plastic&logo=linkedin&colorB=2867B2">
         </a>
-    </p>    
+    </p>
 </p>
-  <a href="kimmykokonut.github.io/" alt="hosted site">See it live on GitHub Pages</a>       
-  
-  <!-- <a href="https://www.linkedin.com/feed/update/urn:li:activity:7203485384104693762/" alt="linked in reference">Learn more here via LinkedIn</a>  -->
+  <a href="kimmykokonut.github.io/" alt="hosted site">See it live on GitHub Pages</a>
 
-  <p>Initiated September 6, 2024</p>  
+  <p>Initiated September 6, 2024</p>
 </center>
 
 <img width="500" alt="Home Page, Light Mode" src="https://github.com/user-attachments/assets/d2294d64-9fab-41e6-bf5b-0b7cba0289f5">
@@ -106,6 +104,5 @@ GNU General Public License v3.0, See license.md for more information
 ## Stretch Goals and Thoughts
 
 - I could mess all day with the styling, I'm still fiddling with the projects carousel.
-- I'm considering a navy blue instead of black for dark mode
 - Change KR name to a logo?
 - Originally wanted a background image but I think it would be too busy.

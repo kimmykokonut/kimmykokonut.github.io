@@ -9,6 +9,14 @@ export interface projectDataProps {
 
 export const PROJECT_DATA: projectDataProps[] = [
   {
+    title: "Camp Scout",
+    description:
+      "Designed to solve personal frustrations with snagging last-minute campsites.  An interactive CLI with a Python polling script that monitors rec.gov for campsite availability. Sends email notifications when reservations become available.",
+    tech: "Python | Miniconda | Email SMTP",
+    imageSrc: "/static/camp-scout-poller.png",
+    codeLink: "https://github.com/kimmykokonut/camp-scout",
+  },
+  {
     title: "Portland Families for Safe Streets Website",
     websiteLink: "https://pdxfamiliesforsafestreets.org/",
     description:
