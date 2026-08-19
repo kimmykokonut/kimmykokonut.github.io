@@ -55,9 +55,9 @@ const Hero = () => {
         </div>
         <div className="col-span-5 mt-4 lg:mt-0">
           <Image
-            className="object-cover border-solid border-slate-800 rounded-full mx-auto p-3 h-[388px] w-[300px] md:h-[550px] md:w-[420px]"
-            src="/static/hunt.jpg"
-            alt="person standing in the forest"
+            className="object-cover border-solid border-slate-800 rounded-[30%] mx-auto p-3"
+            src="/static/computerRoom.png"
+            alt="child in folding chair at 1980's personal computer"
             width={420}
             height={550}
             priority
