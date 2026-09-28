@@ -126,6 +126,7 @@ export const PROJECT_DATA: projectDataProps[] = [
       "A React and Redux application for a hangman-style word guessing game, developed in 16 hours as a pair coding project at Epicodus' bootcamp. Users can choose between easy mode, hard mode, or a two-player version. Players guess letters to reveal a hidden word, with limited attempts. The game provides feedback on each guess, displays correctly and incorrectly guessed letters, and shows remaining guesses. The game ends when the word is guessed or attempts run out.",
     tech: "React | JavaScript | Html | CSS | Redux",
     imageSrc: "/static/puzzle.png",
+    imageHeight: "balanced",
     codeLink: "https://github.com/kimmykokonut/word-puzzle",
   },
   {

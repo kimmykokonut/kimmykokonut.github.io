@@ -44,19 +44,28 @@ const ProjectCard: React.FC<projectDataProps> = ({
       </div>
 
       <div
-        className={`px-2 py-1 flex-grow flex flex-col justify-between ${contentHeightClass}`}
+        className={`min-h-0 px-2 py-1 flex-grow flex flex-col justify-between ${contentHeightClass}`}
       >
         <h4 className="mb-1 text-slate-800 dark:text-white text-lg sm:text-md font-semibold">
           {title}
         </h4>
-        <div className="overflow-y-auto flex flex-grow">
+        <div className="min-h-0 overflow-y-auto flex flex-grow">
           <p className="text-slate-600 dark:text-white text-xs leading-normal">
             {description}
           </p>
         </div>
-        <p className="text-slate-600 dark:text-white text-xs text-center font-light">
-          {tech}
-        </p>
+        <div className="shrink-0 border-t border-slate-200 pt-1.5 dark:border-slate-500">
+          <ul className="flex flex-wrap gap-1">
+            {tech.split("|").map((item) => (
+              <li
+                key={item.trim()}
+                className="rounded-sm border border-slate-200 bg-slate-50 px-1.5 py-0.5 text-[10px] leading-tight text-slate-600 dark:border-slate-500 dark:bg-gray-600 dark:text-slate-100"
+              >
+                {item.trim()}
+              </li>
+            ))}
+          </ul>
+        </div>
         <div className="flex justify-evenly items-center px-1 pb-1 text-xs mt-1">
           {websiteLink && (
             <a
