@@ -4,16 +4,30 @@ export interface projectDataProps {
   description: string;
   tech: string;
   imageSrc: string;
+  imageFit?: "cover" | "contain";
+  imageHeight?: "standard" | "balanced" | "expanded";
   codeLink: string;
 }
 
 export const PROJECT_DATA: projectDataProps[] = [
+  {
+    title: "Sweeper",
+    websiteLink: "https://kimmykokonut.github.io/sweeper/",
+    description:
+      "A mobile-first PWA for scoring Scopa, featuring two-way count verification. I built its core models, scoring logic, and offline setup, then paired with Google’s Antigravity to expand features and refine mobile layouts. The WCAG-compliant app works fully offline and is backed by 50+ Vitest tests.",
+    tech: "Typescript | React | AGY | PWA | Tailwind CSS",
+    imageSrc: "/static/sweeper.png",
+    imageFit: "contain",
+    imageHeight: "expanded",
+    codeLink: "https://github.com/kimmykokonut/sweeper",
+  },
   {
     title: "Camp Scout",
     description:
       "Designed to solve personal frustrations with snagging last-minute campsites.  An interactive CLI with a Python polling script that monitors rec.gov for campsite availability. Sends email notifications when reservations become available.",
     tech: "Python | Miniconda | Email SMTP",
     imageSrc: "/static/camp-scout-poller.png",
+    imageHeight: "balanced",
     codeLink: "https://github.com/kimmykokonut/camp-scout",
   },
   {
@@ -23,6 +37,8 @@ export const PROJECT_DATA: projectDataProps[] = [
       "As part of Portland Digital Corps and CODE PDX, I contributed as a software developer to the all-volunteer creation of a new website for a local non-profit. Our team transformed their online presence from a simple Facebook group into a custom, headless CMS-powered site deployed on Netlify. The new platform allows organizers to easily manage content and better support their mission of traffic safety advocacy. The project’s codebase is open source, enabling other local chapters to adapt it for their own communities.",
     tech: "Next.js | Typescript | Tailwind CSS | Decap CMS",
     imageSrc: "/static/fss.png",
+    imageFit: "contain",
+    imageHeight: "balanced",
     codeLink: "https://github.com/BurlapRobot/pdx-fss",
   },
   {
@@ -32,6 +48,7 @@ export const PROJECT_DATA: projectDataProps[] = [
       "During my job search, I decided to dive into new technologies and frameworks, with a focus on data visualization. I built an application using Chart.js that dynamically displays three interactive charts based on my job application data. The app also includes a form for adding new entries and a fun feature that generates an inspirational quote with each page refresh.  Hosted on Vercel.",
     tech: "Next.js | Typescript | Chart.js | D3 | Tailwind CSS",
     imageSrc: "/static/jobs.png",
+    imageHeight: "balanced",
     codeLink: "https://github.com/kimmykokonut/job-journey",
   },
   {
@@ -66,18 +83,20 @@ export const PROJECT_DATA: projectDataProps[] = [
     title: "Garden Guardian",
     websiteLink: "https://garden-client.onrender.com/",
     description:
-      "Inspired by an unfinished team project from Epicodus, I restructured the database relationships, transitioned from MySQL to PostgreSQL, and revamped the UI by switching from Preact to React with TypeScript, styled using Tailwind. The API allows users to manage garden beds and seeds, create grids, and plant seeds within them. Users can interact with the API through Postman or Swagger (UI is a work in progress).",
+      "Inspired by an unfinished team project, I restructured the database relationships, transitioned from MySQL to PostgreSQL, and revamped the UI by switching from Preact to React with TypeScript, styled using Tailwind. The API allows users to manage garden beds and seeds, create grids, and plant seeds within them. Users can interact with the API through Postman or Swagger.",
     tech: "TypeScript | React | Tailwind | Html | CSS | PostgreSQL | C# | ASP.NET",
     imageSrc: "/static/garden.png",
+    imageHeight: "balanced",
     codeLink: "https://github.com/kimmykokonut/Garden-guardian",
   },
   {
     title: "The Dump Truck",
     websiteLink: "https://github.com/kimmykokonut/dumpling-client",
     description:
-      "My first project built with Django, this WebAPI manages dumpling information, categories, and tags with PostgreSQL integration. Users can register, sign in, view dumpling data, and create, edit, or delete their own entries. I set up admin and user accounts, managed permissions, and am building a React frontend to consume the API. The project also uses dotenv for environment variable management.",
+      "My first project built with Django, this WebAPI manages dumpling information, categories, and tags with PostgreSQL integration. Users can register, sign in, view dumpling data, and create, edit, or delete their own entries. Includes admin and user accounts, permissions, and dotenv for environment variable management.",
     tech: "TypeScript | React | Python | Django | CSS | PostgreSQL",
     imageSrc: "/static/dumplingapi.png",
+    imageHeight: "balanced",
     codeLink: "https://github.com/kimmykokonut/dumpling-api",
   },
   {
@@ -87,6 +106,7 @@ export const PROJECT_DATA: projectDataProps[] = [
       "A React app that helps users discover local bands, save favorite artists, and connect with others through a live feed. Users can search for concerts, follow artists, and see saved shows in their dashboard. Built in 3 days by a team of five at Epicodus using React, Vite, and Firestore. I integrated the JamBase API, built the 'Who's Coming' page, implemented concert search by city, and handled deployment on Netlify.",
     tech: "React | JavaScript | Html | CSS | Material UI | API",
     imageSrc: "/static/soundcheck.png",
+    imageHeight: "balanced",
     codeLink: "https://github.com/kimmykokonut/sound-check",
   },
   {
@@ -96,6 +116,7 @@ export const PROJECT_DATA: projectDataProps[] = [
       "An 8-hour Epicodus project to refactor a React app with Redux and testing. Users can view flavors, add pails, see details, track servings, and sell pints. Initially built with class components, refactored to functional components for better state management.",
     tech: "React | JavaScript | Html | CSS | Bootstrap | Redux | Jest | npm",
     imageSrc: "/static/gelato.png",
+    imageHeight: "balanced",
     codeLink: "https://github.com/kimmykokonut/inventory-tracker-cra-redux",
   },
   {
@@ -114,6 +135,7 @@ export const PROJECT_DATA: projectDataProps[] = [
       "A currency exchange application developed for Epicodus bootcamp, built in 8 hours. Users can input a USD amount and convert it to up to 5 different currencies using the Exchange Rate API. The app displays the converted amount and handles errors gracefully, notifying users of any issues with the API or invalid currencies.",
     tech: "JavaScript | HTML | CSS | npm | Bootstrap | API",
     imageSrc: "/static/currency.png",
+    imageHeight: "balanced",
     codeLink: "https://github.com/kimmykokonut/currency-exchanger",
   },
 ];
